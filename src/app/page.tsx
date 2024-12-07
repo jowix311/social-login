@@ -1,5 +1,6 @@
 import {
   FacebookLogin,
+  LineLogin,
   SignOut,
   SocialBlock,
   TwitterLogin,
@@ -19,6 +20,7 @@ export default async function Home() {
                 <h2>Sign in with</h2>
                 <FacebookLogin>Facebook</FacebookLogin>
                 <TwitterLogin>Twitter</TwitterLogin>
+                <LineLogin>Line</LineLogin>
               </>
             ) : (
               <>
