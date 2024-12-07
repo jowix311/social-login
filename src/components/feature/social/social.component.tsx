@@ -17,6 +17,10 @@ export const SocialBlock = ({ children, className }: CommonProps) => {
   );
 };
 
+export const SocialButtons = ({ children, className }: CommonProps) => {
+  return <div className={cn("flex gap-5", className)}>{children}</div>;
+};
+
 export const FacebookLogin = ({ children, className }: CommonProps) => {
   return (
     <Button

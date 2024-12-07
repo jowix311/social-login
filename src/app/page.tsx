@@ -3,8 +3,10 @@ import {
   LineLogin,
   SignOut,
   SocialBlock,
+  SocialButtons,
   TwitterLogin,
 } from "@/components/feature/social";
+import { Facebook, MessageCircle, Twitter } from "lucide-react";
 import { auth } from "./auth";
 
 export default async function Home() {
@@ -17,10 +19,20 @@ export default async function Home() {
           <SocialBlock className="space-y-5">
             {!session ? (
               <>
-                <h2>Sign in with</h2>
-                <FacebookLogin>Facebook</FacebookLogin>
-                <TwitterLogin>Twitter</TwitterLogin>
-                <LineLogin>Line</LineLogin>
+                <h2 className="block">Sign in with</h2>
+                <SocialButtons>
+                  <FacebookLogin>
+                    <Facebook />
+                    Facebook
+                  </FacebookLogin>
+                  <TwitterLogin>
+                    <Twitter />
+                    Twitter
+                  </TwitterLogin>
+                  <LineLogin>
+                    <MessageCircle /> Line
+                  </LineLogin>
+                </SocialButtons>
               </>
             ) : (
               <>
