@@ -1,0 +1,16 @@
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 3000,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "es5",
+  "prettier.printWidth": 100,
+  "prettier.jsxSingleQuote": true
+}
