@@ -30,6 +30,19 @@ export const FacebookLogin = ({ children, className }: CommonProps) => {
   );
 };
 
+export const TwitterLogin = ({ children, className }: CommonProps) => {
+  return (
+    <Button
+      className={cn("font-bold text-white", className)}
+      onClick={() => {
+        signIn("twitter");
+      }}
+    >
+      {children}
+    </Button>
+  );
+};
+
 export const SignOut = ({ children, className }: CommonProps) => {
   return (
     <Button

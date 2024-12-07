@@ -2,12 +2,12 @@ import {
   FacebookLogin,
   SignOut,
   SocialBlock,
+  TwitterLogin,
 } from "@/components/feature/social";
 import { auth } from "./auth";
 
 export default async function Home() {
   const session = await auth();
-
 
   return (
     <div className="">
@@ -18,6 +18,7 @@ export default async function Home() {
               <>
                 <h2>Sign in with</h2>
                 <FacebookLogin>Facebook</FacebookLogin>
+                <TwitterLogin>Twitter</TwitterLogin>
               </>
             ) : (
               <>
